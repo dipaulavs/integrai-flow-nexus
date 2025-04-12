@@ -9,7 +9,7 @@ const VideoSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Veja como a <span className="text-cyber-blue">IntegrAI</span> revoluciona processos
+            Como a <span className="text-cyber-blue">IntegrAI</span> revoluciona processos
           </h2>
           <p className="section-subtitle">
             Nossa tecnologia transforma radicalmente a forma como sua empresa opera, 

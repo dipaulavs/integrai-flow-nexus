@@ -110,6 +110,18 @@ const HeroSection = () => {
             de IA especializados que colaboram entre si.
           </p>
           
+          <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-cyber-blue/30 shadow-[0_0_30px_rgba(0,98,255,0.15)] mb-10">
+            <div className="aspect-w-16 aspect-h-9 relative">
+              <iframe 
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/3Ke_E4jXCRM" 
+                title="IntegrAI Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+          
           <a 
             href="#contato" 
             className="cyber-button inline-flex items-center text-lg animate-glow"

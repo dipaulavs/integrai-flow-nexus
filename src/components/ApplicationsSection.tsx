@@ -1,44 +1,44 @@
 
 import React from 'react';
 import { 
-  Truck, 
-  LineChart, 
-  Users, 
-  Factory, 
-  ShoppingCart, 
-  Building2 
+  MessageSquare, 
+  Search, 
+  BarChart3, 
+  Instagram, 
+  FileText, 
+  Palette 
 } from 'lucide-react';
 
 const applications = [
   {
-    icon: <Truck className="h-10 w-10 text-cyber-blue" />,
-    title: 'Logística & Supply Chain',
-    description: 'Otimize rotas, previsão de demanda e gestão de estoque automatizada com IA.'
+    icon: <MessageSquare className="h-10 w-10 text-cyber-blue" />,
+    title: 'Agente de Atendimento Humanizado no WhatsApp',
+    description: 'Inteligência Artificial que responde com empatia, 24 horas por dia.'
   },
   {
-    icon: <LineChart className="h-10 w-10 text-cyber-blue" />,
-    title: 'Finanças & Contabilidade',
-    description: 'Automatize relatórios financeiros, análise de despesas e previsões orçamentárias.'
+    icon: <Search className="h-10 w-10 text-cyber-blue" />,
+    title: 'Agente de SEO Estratégico',
+    description: 'Seu especialista automatizado para posicionar sua empresa na primeira página do Google.'
   },
   {
-    icon: <Users className="h-10 w-10 text-cyber-blue" />,
-    title: 'Atendimento ao Cliente',
-    description: 'Elevada experiência do cliente com atendimento 24/7 e soluções personalizadas.'
+    icon: <BarChart3 className="h-10 w-10 text-cyber-blue" />,
+    title: 'Agente Gestor de Tráfego para META Ads',
+    description: 'Criação e otimização de campanhas com inteligência de performance contínua.'
   },
   {
-    icon: <Factory className="h-10 w-10 text-cyber-blue" />,
-    title: 'Manufatura & Produção',
-    description: 'Manutenção preditiva, controle de qualidade e otimização de processos industriais.'
+    icon: <Instagram className="h-10 w-10 text-cyber-blue" />,
+    title: 'Agente Criador de Conteúdo Social',
+    description: 'Postagens estratégicas para Instagram, TikTok e mais, geradas com criatividade e consistência.'
   },
   {
-    icon: <ShoppingCart className="h-10 w-10 text-cyber-blue" />,
-    title: 'Varejo & E-commerce',
-    description: 'Personalização de experiências, gestão de inventário e previsão de tendências.'
+    icon: <FileText className="h-10 w-10 text-cyber-blue" />,
+    title: 'Agente Redator SEO para Blogs',
+    description: 'Conteúdos empresariais otimizados com palavras-chave inteligentes e foco em ranqueamento.'
   },
   {
-    icon: <Building2 className="h-10 w-10 text-cyber-blue" />,
-    title: 'Jurídico & Compliance',
-    description: 'Análise automatizada de contratos, monitoramento regulatório e gestão de riscos.'
+    icon: <Palette className="h-10 w-10 text-cyber-blue" />,
+    title: 'Agente Designer de Flyers Promocionais',
+    description: 'Criações visuais impactantes e alinhadas com a identidade do seu negócio.'
   }
 ];
 
@@ -73,6 +73,13 @@ const ApplicationsSection = () => {
               <p className="text-cyber-silver/70 leading-relaxed">
                 {application.description}
               </p>
+              {index < applications.length - 1 && (
+                <div className="mt-6 pt-6 border-t border-cyber-blue/10">
+                  <div className="w-full flex justify-center">
+                    <div className="text-cyber-blue">⸻</div>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
