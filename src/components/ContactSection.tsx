@@ -3,6 +3,14 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const ContactSection = () => {
+  // Função para abrir o WhatsApp com a mensagem predefinida
+  const openWhatsApp = () => {
+    const phoneNumber = "5531980160822";
+    const message = "Olá, gostaria de saber mais sobre a IntegrAI para automatizar minha empresa.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="contato" className="py-20 relative overflow-hidden bg-cyber-black">
       <div className="absolute inset-0 bg-blue-glow opacity-30"></div>
@@ -63,6 +71,7 @@ const ContactSection = () => {
               
               <button
                 type="button"
+                onClick={openWhatsApp}
                 className="cyber-button w-full flex items-center justify-center mt-2 animate-glow"
               >
                 Quero automatizar minha empresa

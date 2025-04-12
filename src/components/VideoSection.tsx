@@ -21,7 +21,7 @@ const VideoSection = () => {
           <div className="aspect-w-16 aspect-h-9 relative">
             <iframe 
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=TsWvhK0x92NMqnmS" 
+              src="https://www.youtube.com/embed/3Ke_E4jXCRM" 
               title="IntegrAI Demo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen

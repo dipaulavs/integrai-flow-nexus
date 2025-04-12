@@ -28,24 +28,24 @@ const AgentsSection = () => {
         </div>
         
         <div className="relative max-w-5xl mx-auto">
-          {/* Centro - Hub Principal */}
-          <div className="cyber-card absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 md:w-40 md:h-40 rounded-full z-20 flex items-center justify-center bg-gradient-to-br from-cyber-dark-gray to-cyber-black border-cyber-blue/40 animate-pulse-light">
-            <div className="text-center">
-              <Network className="h-8 w-8 md:h-12 md:w-12 mx-auto text-cyber-blue mb-1" />
-              <span className="text-sm md:text-base font-medium text-white">Hub Central</span>
+          {/* Versão para desktop com hub central e agentes ao redor */}
+          <div className="hidden md:block relative" style={{ height: "400px" }}>
+            {/* Centro - Hub Principal */}
+            <div className="cyber-card absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full z-20 flex items-center justify-center bg-gradient-to-br from-cyber-dark-gray to-cyber-black border-cyber-blue/40 animate-pulse-light">
+              <div className="text-center">
+                <Network className="h-12 w-12 mx-auto text-cyber-blue mb-1" />
+                <span className="text-base font-medium text-white">Hub Central</span>
+              </div>
             </div>
-          </div>
-          
-          {/* Agentes ao redor - Visíveis apenas em telas maiores */}
-          <div className="hidden md:block">
+            
             {/* Agente 1 - Análise de Dados */}
-            <div className="cyber-card absolute left-0 top-1/4 transform -translate-y-1/2 w-32 h-32 rounded-lg z-10 flex flex-col items-center justify-center animate-float">
+            <div className="cyber-card absolute left-0 top-1/2 transform -translate-y-1/2 w-32 h-32 rounded-lg z-10 flex flex-col items-center justify-center animate-float">
               <Database className="h-8 w-8 text-cyber-blue mb-2" />
               <span className="text-sm font-medium text-white text-center">Análise de Dados</span>
             </div>
             
             {/* Agente 2 - Processamento */}
-            <div className="cyber-card absolute right-0 top-1/4 transform -translate-y-1/2 w-32 h-32 rounded-lg z-10 flex flex-col items-center justify-center animate-float" style={{ animationDelay: "0.5s" }}>
+            <div className="cyber-card absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-32 rounded-lg z-10 flex flex-col items-center justify-center animate-float" style={{ animationDelay: "0.5s" }}>
               <Workflow className="h-8 w-8 text-cyber-blue mb-2" />
               <span className="text-sm font-medium text-white text-center">Processamento</span>
             </div>
@@ -64,10 +64,10 @@ const AgentsSection = () => {
             
             {/* Linhas de conexão animadas */}
             <svg className="absolute inset-0 z-0" width="100%" height="100%">
-              <line x1="16%" y1="25%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" />
-              <line x1="84%" y1="25%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" style={{ animationDelay: "0.5s" }} />
-              <line x1="25%" y1="92%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" style={{ animationDelay: "1s" }} />
-              <line x1="75%" y1="92%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" style={{ animationDelay: "1.5s" }} />
+              <line x1="16%" y1="50%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" />
+              <line x1="84%" y1="50%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" style={{ animationDelay: "0.5s" }} />
+              <line x1="25%" y1="95%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" style={{ animationDelay: "1s" }} />
+              <line x1="75%" y1="95%" x2="50%" y2="50%" stroke="#0062FF" strokeWidth="2" strokeDasharray="5,5" strokeOpacity="0.6" className="animate-network-flow" style={{ animationDelay: "1.5s" }} />
             </svg>
           </div>
           
