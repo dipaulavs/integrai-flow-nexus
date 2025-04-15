@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 
 const ContactSection = () => {
   // Função para abrir o WhatsApp com a mensagem predefinida
@@ -75,7 +74,6 @@ const ContactSection = () => {
                 className="cyber-button w-full flex items-center justify-center mt-2 animate-glow"
               >
                 Quero automatizar minha empresa
-                <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </div>
           </form>

@@ -20,6 +20,24 @@ const Navbar = () => {
     };
   }, []);
 
+  // Function to handle smooth scrolling
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    
+    // Close mobile menu if open
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+    
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <header
       className={cn(
@@ -30,7 +48,11 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+        <a 
+          href="#" 
+          className="flex items-center gap-2"
+          onClick={(e) => handleSmoothScroll(e, 'root')}
+        >
           <div className="w-10 h-10 rounded-md bg-cyber-blue flex items-center justify-center">
             <span className="text-white font-bold text-xl">Ai</span>
           </div>
@@ -41,16 +63,32 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#beneficios" className="text-cyber-silver hover:text-cyber-blue-light transition-colors">
+          <a 
+            href="#beneficios" 
+            className="text-cyber-silver hover:text-cyber-blue-light transition-colors"
+            onClick={(e) => handleSmoothScroll(e, 'beneficios')}
+          >
             Benefícios
           </a>
-          <a href="#como-funciona" className="text-cyber-silver hover:text-cyber-blue-light transition-colors">
+          <a 
+            href="#como-funciona" 
+            className="text-cyber-silver hover:text-cyber-blue-light transition-colors"
+            onClick={(e) => handleSmoothScroll(e, 'como-funciona')}
+          >
             Como Funciona
           </a>
-          <a href="#aplicacoes" className="text-cyber-silver hover:text-cyber-blue-light transition-colors">
+          <a 
+            href="#aplicacoes" 
+            className="text-cyber-silver hover:text-cyber-blue-light transition-colors"
+            onClick={(e) => handleSmoothScroll(e, 'aplicacoes')}
+          >
             Aplicações
           </a>
-          <a href="#contato" className="cyber-button inline-block">
+          <a 
+            href="#contato" 
+            className="cyber-button inline-block"
+            onClick={(e) => handleSmoothScroll(e, 'contato')}
+          >
             Demonstração
           </a>
         </nav>
@@ -75,28 +113,28 @@ const Navbar = () => {
             <a
               href="#beneficios"
               className="text-cyber-silver hover:text-cyber-blue-light transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleSmoothScroll(e, 'beneficios')}
             >
               Benefícios
             </a>
             <a
               href="#como-funciona"
               className="text-cyber-silver hover:text-cyber-blue-light transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleSmoothScroll(e, 'como-funciona')}
             >
               Como Funciona
             </a>
             <a
               href="#aplicacoes"
               className="text-cyber-silver hover:text-cyber-blue-light transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleSmoothScroll(e, 'aplicacoes')}
             >
               Aplicações
             </a>
             <a
               href="#contato"
               className="cyber-button inline-block text-center"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleSmoothScroll(e, 'contato')}
             >
               Demonstração
             </a>

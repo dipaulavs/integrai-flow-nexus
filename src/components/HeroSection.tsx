@@ -1,6 +1,4 @@
-
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -114,7 +112,7 @@ const HeroSection = () => {
             <div className="aspect-w-16 aspect-h-9 relative">
               <iframe 
                 className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/3Ke_E4jXCRM" 
+                src="https://www.youtube.com/embed/oxBYIZkloSI" 
                 title="IntegrAI Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
@@ -127,7 +125,6 @@ const HeroSection = () => {
             className="cyber-button inline-flex items-center text-lg animate-glow"
           >
             Quero automatizar minha empresa
-            <ArrowRight className="ml-2 h-5 w-5" />
           </a>
 
           <div className="mt-16 flex justify-center">

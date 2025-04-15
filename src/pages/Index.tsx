@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import VideoSection from '../components/VideoSection';
 import BenefitsSection from '../components/BenefitsSection';
 import AgentsSection from '../components/AgentsSection';
 import ApplicationsSection from '../components/ApplicationsSection';
@@ -15,7 +14,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="root" className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
