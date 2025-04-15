@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
@@ -86,7 +85,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#contato" 
-            className="cyber-button inline-block"
+            className="text-cyber-silver hover:text-cyber-blue-light transition-colors px-4 py-2 rounded-md transition-all duration-300 hover:bg-cyber-blue/10"
             onClick={(e) => handleSmoothScroll(e, 'contato')}
           >
             Demonstração
@@ -133,7 +132,7 @@ const Navbar = () => {
             </a>
             <a
               href="#contato"
-              className="cyber-button inline-block text-center"
+              className="text-cyber-silver hover:text-cyber-blue-light transition-colors text-center py-2 rounded-md transition-all duration-300 hover:bg-cyber-blue/10"
               onClick={(e) => handleSmoothScroll(e, 'contato')}
             >
               Demonstração
