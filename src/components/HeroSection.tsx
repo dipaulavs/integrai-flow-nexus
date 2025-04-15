@@ -110,7 +110,7 @@ const HeroSection = () => {
           </p>
           
           <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-cyber-blue/30 shadow-[0_0_30px_rgba(0,98,255,0.15)] mb-10">
-            <div className="aspect-w-16 aspect-h-9 relative">
+            <div className="relative" style={{ paddingBottom: '56.25%' }}>
               <iframe 
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/oxBYIZkloSI" 
